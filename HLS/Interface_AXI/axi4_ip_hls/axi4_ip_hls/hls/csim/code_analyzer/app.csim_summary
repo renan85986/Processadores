@@ -1,0 +1,66 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\renan\\Documents\\Processadores\\HLS\\Interface_AXI\\axi4_ip_hls\\axi4_ip_hls\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jul 17 20:19:24 2024",
+ "timestampMillis": "1721258364811",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jul 17 20:19:24 2024",
+ "timestampMillis": "1721258364813",
+ "buildStep": {
+  "cmdId": "0184a990-4493-11ef-8bb3-f4b52030c905",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 17 20:19:24 2024",
+ "timestampMillis": "1721258364813",
+ "status": {
+  "cmdId": "0184a990-4493-11ef-8bb3-f4b52030c905",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 17 20:19:36 2024",
+ "timestampMillis": "1721258376422",
+ "status": {
+  "cmdId": "0184a990-4493-11ef-8bb3-f4b52030c905",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

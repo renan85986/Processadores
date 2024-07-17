@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\Users\\renan\\Documents\\Processadores\\HLS\\Interface_AXI\\axi4_ip_hls",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/renan/Documents/Processadores/HLS/Interface_AXI/axi4_ip.cpp"
+    ],
+    "file": "C:/Users/renan/Documents/Processadores/HLS/Interface_AXI/axi4_ip.cpp"
+  },
+  {
+    "directory": "C:\\Users\\renan\\Documents\\Processadores\\HLS\\Interface_AXI\\axi4_ip_hls",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:/Users/renan/Documents/Processadores/HLS/Interface_AXI/testbench.cpp"
+    ],
+    "file": "C:/Users/renan/Documents/Processadores/HLS/Interface_AXI/testbench.cpp"
+  }
+]
