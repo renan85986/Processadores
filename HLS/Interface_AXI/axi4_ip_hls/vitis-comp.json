@@ -1,0 +1,11 @@
+{
+  "name": "axi4_ip_hls",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "axi4_config.cfg"
+    ],
+    "work_dir": "axi4_ip_hls"
+  }
+}
