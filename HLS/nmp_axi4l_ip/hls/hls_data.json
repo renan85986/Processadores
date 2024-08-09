@@ -1,0 +1,1289 @@
+{
+  "Top": "nmp_axi4l_ip",
+  "RtlTop": "nmp_axi4l_ip",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "nmp_axi4l_ip_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_none",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg484",
+    "Speed": "-1",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "awaddr": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "ap_uint<8>",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "awaddr",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "awvalid": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "awvalid",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "awready": {
+      "index": "2",
+      "direction": "inout",
+      "srcType": "bool&",
+      "srcSize": "1",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "awready_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "awready_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "awready_o_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "wdata": {
+      "index": "3",
+      "direction": "in",
+      "srcType": "ap_uint<32>",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "wdata",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "wvalid": {
+      "index": "4",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "wvalid",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "wready": {
+      "index": "5",
+      "direction": "inout",
+      "srcType": "bool&",
+      "srcSize": "1",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "wready_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "wready_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "wready_o_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "bvalid": {
+      "index": "6",
+      "direction": "inout",
+      "srcType": "bool&",
+      "srcSize": "1",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "bvalid_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "bvalid_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "bvalid_o_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "bready": {
+      "index": "7",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "bready",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "araddr": {
+      "index": "8",
+      "direction": "in",
+      "srcType": "ap_uint<8>",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "araddr",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "arvalid": {
+      "index": "9",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "arvalid",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "arready": {
+      "index": "10",
+      "direction": "inout",
+      "srcType": "bool&",
+      "srcSize": "1",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "arready_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "arready_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "arready_o_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "rdata": {
+      "index": "11",
+      "direction": "out",
+      "srcType": "ap_uint<32>&",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rdata",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rdata_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "rvalid": {
+      "index": "12",
+      "direction": "inout",
+      "srcType": "bool&",
+      "srcSize": "1",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rvalid_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rvalid_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rvalid_o_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "rready": {
+      "index": "13",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rready",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "clk": {
+      "index": "14",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "clk",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "rst_n": {
+      "index": "15",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rst_n",
+          "usage": "data",
+          "direction": "in"
+        }]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_csim -clean=1",
+      "config_csim -code_analyzer=0",
+      "config_export -format=ip_catalog",
+      "config_export -flow=none",
+      "config_sim -O=0"
+    ],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "nmp_axi4l_ip"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "Uncertainty": "2.7",
+    "IsCombinational": "0",
+    "II": "1",
+    "Latency": "0"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "nmp_axi4l_ip",
+    "Version": "1.0",
+    "DisplayName": "Nmp_axi4l_ip",
+    "Revision": "2113678404",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_nmp_axi4l_ip_1_0.zip"
+  },
+  "Files": {
+    "CSource": [
+      "..\/..\/nmp_axi4l_ip.cpp",
+      "..\/..\/nmp_axi4l_ip.h",
+      "..\/..\/bram.cpp",
+      "..\/..\/bram.h"
+    ],
+    "TestBench": ["..\/..\/nmp_axi4l_ip_tb.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/nmp_axi4l_ip_control_s_axi.vhd",
+      "impl\/vhdl\/nmp_axi4l_ip.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/nmp_axi4l_ip_control_s_axi.v",
+      "impl\/verilog\/nmp_axi4l_ip.v"
+    ],
+    "SwDriver": [
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/data\/nmp_axi4l_ip.mdd",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/data\/nmp_axi4l_ip.tcl",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/data\/nmp_axi4l_ip.yaml",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/src\/CMakeLists.txt",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/src\/Makefile",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/src\/xnmp_axi4l_ip.c",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/src\/xnmp_axi4l_ip.h",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/src\/xnmp_axi4l_ip_hw.h",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/src\/xnmp_axi4l_ip_linux.c",
+      "impl\/misc\/drivers\/nmp_axi4l_ip_v1_0\/src\/xnmp_axi4l_ip_sinit.c"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [".debug\/nmp_axi4l_ip.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "s_axi_control": {
+      "type": "axi4lite",
+      "busTypeName": "aximm",
+      "mode": "slave",
+      "dataWidth": "32",
+      "addrWidth": "8",
+      "portPrefix": "s_axi_control_",
+      "paramPrefix": "C_S_AXI_CONTROL_",
+      "ports": [
+        "s_axi_control_ARADDR",
+        "s_axi_control_ARREADY",
+        "s_axi_control_ARVALID",
+        "s_axi_control_AWADDR",
+        "s_axi_control_AWREADY",
+        "s_axi_control_AWVALID",
+        "s_axi_control_BREADY",
+        "s_axi_control_BRESP",
+        "s_axi_control_BVALID",
+        "s_axi_control_RDATA",
+        "s_axi_control_RREADY",
+        "s_axi_control_RRESP",
+        "s_axi_control_RVALID",
+        "s_axi_control_WDATA",
+        "s_axi_control_WREADY",
+        "s_axi_control_WSTRB",
+        "s_axi_control_WVALID"
+      ],
+      "registers": [
+        {
+          "offset": "0x10",
+          "name": "awaddr",
+          "access": "W",
+          "description": "Data signal of awaddr",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "8",
+              "name": "awaddr",
+              "access": "W",
+              "description": "Bit 7 to 0 of awaddr"
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x18",
+          "name": "awvalid",
+          "access": "W",
+          "description": "Data signal of awvalid",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "awvalid",
+              "access": "W",
+              "description": "Bit 0 to 0 of awvalid"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x20",
+          "name": "awready_i",
+          "access": "W",
+          "description": "Data signal of awready_i",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "awready_i",
+              "access": "W",
+              "description": "Bit 0 to 0 of awready_i"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x28",
+          "name": "awready_o",
+          "access": "R",
+          "description": "Data signal of awready_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "awready_o",
+              "access": "R",
+              "description": "Bit 0 to 0 of awready_o"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x2c",
+          "name": "awready_o_ctrl",
+          "access": "R",
+          "description": "Control signal of awready_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "awready_o_ap_vld",
+              "access": "R",
+              "description": "Control signal awready_o_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x30",
+          "name": "wdata",
+          "access": "W",
+          "description": "Data signal of wdata",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "wdata",
+              "access": "W",
+              "description": "Bit 31 to 0 of wdata"
+            }]
+        },
+        {
+          "offset": "0x38",
+          "name": "wvalid",
+          "access": "W",
+          "description": "Data signal of wvalid",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "wvalid",
+              "access": "W",
+              "description": "Bit 0 to 0 of wvalid"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x40",
+          "name": "wready_i",
+          "access": "W",
+          "description": "Data signal of wready_i",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "wready_i",
+              "access": "W",
+              "description": "Bit 0 to 0 of wready_i"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x48",
+          "name": "wready_o",
+          "access": "R",
+          "description": "Data signal of wready_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "wready_o",
+              "access": "R",
+              "description": "Bit 0 to 0 of wready_o"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x4c",
+          "name": "wready_o_ctrl",
+          "access": "R",
+          "description": "Control signal of wready_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "wready_o_ap_vld",
+              "access": "R",
+              "description": "Control signal wready_o_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x50",
+          "name": "bvalid_i",
+          "access": "W",
+          "description": "Data signal of bvalid_i",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "bvalid_i",
+              "access": "W",
+              "description": "Bit 0 to 0 of bvalid_i"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x58",
+          "name": "bvalid_o",
+          "access": "R",
+          "description": "Data signal of bvalid_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "bvalid_o",
+              "access": "R",
+              "description": "Bit 0 to 0 of bvalid_o"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x5c",
+          "name": "bvalid_o_ctrl",
+          "access": "R",
+          "description": "Control signal of bvalid_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "bvalid_o_ap_vld",
+              "access": "R",
+              "description": "Control signal bvalid_o_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x60",
+          "name": "bready",
+          "access": "W",
+          "description": "Data signal of bready",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "bready",
+              "access": "W",
+              "description": "Bit 0 to 0 of bready"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x68",
+          "name": "araddr",
+          "access": "W",
+          "description": "Data signal of araddr",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "8",
+              "name": "araddr",
+              "access": "W",
+              "description": "Bit 7 to 0 of araddr"
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x70",
+          "name": "arvalid",
+          "access": "W",
+          "description": "Data signal of arvalid",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "arvalid",
+              "access": "W",
+              "description": "Bit 0 to 0 of arvalid"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x78",
+          "name": "arready_i",
+          "access": "W",
+          "description": "Data signal of arready_i",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "arready_i",
+              "access": "W",
+              "description": "Bit 0 to 0 of arready_i"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x80",
+          "name": "arready_o",
+          "access": "R",
+          "description": "Data signal of arready_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "arready_o",
+              "access": "R",
+              "description": "Bit 0 to 0 of arready_o"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x84",
+          "name": "arready_o_ctrl",
+          "access": "R",
+          "description": "Control signal of arready_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "arready_o_ap_vld",
+              "access": "R",
+              "description": "Control signal arready_o_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x88",
+          "name": "rdata",
+          "access": "R",
+          "description": "Data signal of rdata",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "rdata",
+              "access": "R",
+              "description": "Bit 31 to 0 of rdata"
+            }]
+        },
+        {
+          "offset": "0x8c",
+          "name": "rdata_ctrl",
+          "access": "R",
+          "description": "Control signal of rdata",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "rdata_ap_vld",
+              "access": "R",
+              "description": "Control signal rdata_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x98",
+          "name": "rvalid_i",
+          "access": "W",
+          "description": "Data signal of rvalid_i",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "rvalid_i",
+              "access": "W",
+              "description": "Bit 0 to 0 of rvalid_i"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0xa0",
+          "name": "rvalid_o",
+          "access": "R",
+          "description": "Data signal of rvalid_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "rvalid_o",
+              "access": "R",
+              "description": "Bit 0 to 0 of rvalid_o"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0xa4",
+          "name": "rvalid_o_ctrl",
+          "access": "R",
+          "description": "Control signal of rvalid_o",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "rvalid_o_ap_vld",
+              "access": "R",
+              "description": "Control signal rvalid_o_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0xa8",
+          "name": "rready",
+          "access": "W",
+          "description": "Data signal of rready",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "rready",
+              "access": "W",
+              "description": "Bit 0 to 0 of rready"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0xb0",
+          "name": "clk",
+          "access": "W",
+          "description": "Data signal of clk",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "clk",
+              "access": "W",
+              "description": "Bit 0 to 0 of clk"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0xb8",
+          "name": "rst_n",
+          "access": "W",
+          "description": "Data signal of rst_n",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "rst_n",
+              "access": "W",
+              "description": "Bit 0 to 0 of rst_n"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "16",
+          "argName": "awaddr"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "24",
+          "argName": "awvalid"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "32",
+          "argName": "awready"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "48",
+          "argName": "wdata"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "56",
+          "argName": "wvalid"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "64",
+          "argName": "wready"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "80",
+          "argName": "bvalid"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "96",
+          "argName": "bready"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "104",
+          "argName": "araddr"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "112",
+          "argName": "arvalid"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "120",
+          "argName": "arready"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "136",
+          "argName": "rdata"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "152",
+          "argName": "rvalid"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "168",
+          "argName": "rready"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "176",
+          "argName": "clk"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "184",
+          "argName": "rst_n"
+        }
+      ]
+    },
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {
+        "ASSOCIATED_BUSIF": "s_axi_control",
+        "ASSOCIATED_RESET": "ap_rst_n"
+      },
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_LOW"},
+      "portMap": {"ap_rst_n": "RST"},
+      "ports": ["ap_rst_n"]
+    }
+  },
+  "RtlPorts": {
+    "s_axi_control_AWVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_AWREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_AWADDR": {
+      "dir": "in",
+      "width": "8"
+    },
+    "s_axi_control_WVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_WREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_WDATA": {
+      "dir": "in",
+      "width": "32"
+    },
+    "s_axi_control_WSTRB": {
+      "dir": "in",
+      "width": "4"
+    },
+    "s_axi_control_ARVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_ARREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_ARADDR": {
+      "dir": "in",
+      "width": "8"
+    },
+    "s_axi_control_RVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_RREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_RDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "s_axi_control_RRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "s_axi_control_BVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_BREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_BRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "nmp_axi4l_ip",
+      "BindInstances": "awready_load_not6_fu_244_p2 not_sel_tmp1_fu_250_p2 wready_load_not7_fu_257_p2 not_sel_tmp4_fu_263_p2 xor_ln84_fu_270_p2 or_ln84_1_fu_276_p2 or_ln84_fu_282_p2 and_ln86_fu_288_p2 and_ln103_fu_294_p2 xor_ln103_fu_300_p2 or_ln103_fu_306_p2 and_ln105_fu_312_p2 add_ln112_fu_322_p2 control_s_axi_U"
+    },
+    "Info": {"nmp_axi4l_ip": {
+        "FunctionProtocol": "ap_ctrl_none",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "1"
+      }},
+    "Metrics": {"nmp_axi4l_ip": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.70",
+          "Estimate": "5.566"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "280",
+          "UTIL_BRAM": "0",
+          "FF": "262",
+          "AVAIL_FF": "106400",
+          "UTIL_FF": "~0",
+          "LUT": "375",
+          "AVAIL_LUT": "53200",
+          "UTIL_LUT": "~0",
+          "DSP": "0",
+          "AVAIL_DSP": "220",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2024-08-06 15:25:00 -0300",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2024.1"
+  }
+}

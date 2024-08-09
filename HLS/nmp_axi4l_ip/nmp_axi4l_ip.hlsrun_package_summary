@@ -1,0 +1,162 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\renan\\Desktop\\teste\\nmp_axi4l_ip\\nmp_axi4l_ip.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "08/06/24 15:24:55",
+ "timestampMillis": "686809755",
+ "buildStep": {
+  "cmdId": "580ed8b4-faf6-4c2a-a5cf-1e16e2c0e3fb",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\renan\\Desktop\\teste\\nmp_axi4l_ip\\logs\\nmp_axi4l_ip.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\Users\\renan\\Desktop\\teste\\hls_config.cfg --work_dir nmp_axi4l_ip ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\Users\\renan\\Desktop\\teste\\hls_config.cfg",
+   "--work_dir",
+   "nmp_axi4l_ip"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\renan\\Desktop\\teste"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/06/24 15:24:55",
+ "timestampMillis": "686809756",
+ "status": {
+  "cmdId": "580ed8b4-faf6-4c2a-a5cf-1e16e2c0e3fb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "08/06/24 15:24:59",
+ "timestampMillis": "686814032",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "nmp_axi4l_ip",
+     "file": "C:/Users\\renan\\Desktop\\teste\\nmp_axi4l_ip\\nmp_axi4l_ip.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\renan\\Desktop\\teste\\nmp_axi4l_ip.cpp",
+     "C:/Users\\renan\\Desktop\\teste\\nmp_axi4l_ip.h",
+     "C:/Users\\renan\\Desktop\\teste\\bram.cpp",
+     "C:/Users\\renan\\Desktop\\teste\\bram.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "08/06/24 15:24:59",
+ "timestampMillis": "686814033",
+ "buildStep": {
+  "cmdId": "705b67fc-094d-460f-8366-7d07a97ade43",
+  "name": "export_design",
+  "logFile": "C:/Users\\renan\\Desktop\\teste\\nmp_axi4l_ip\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\renan\\Desktop\\teste"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/06/24 15:24:59",
+ "timestampMillis": "686814034",
+ "status": {
+  "cmdId": "705b67fc-094d-460f-8366-7d07a97ade43",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/06/24 15:25:12",
+ "timestampMillis": "686827007",
+ "status": {
+  "cmdId": "705b67fc-094d-460f-8366-7d07a97ade43",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/06/24 15:25:12",
+ "timestampMillis": "686827144",
+ "status": {
+  "cmdId": "580ed8b4-faf6-4c2a-a5cf-1e16e2c0e3fb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/06/24 15:25:12",
+ "timestampMillis": "686827145",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/06/24 15:25:12",
+ "timestampMillis": "686827146",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

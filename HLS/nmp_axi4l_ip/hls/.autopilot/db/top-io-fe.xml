@@ -1,0 +1,89 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="nmp_axi4l_ip" language="c" hwCtrl="ap_ctrl_none" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="awaddr" src_type="ap_uint&lt;8&gt;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="8" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="r" src_name="awvalid" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="rw" src_name="awready" src_type="bool&amp;" src_isptr="1" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32"/>
+        </hw>
+      </arg>
+      <arg id="3" access_type="r" src_name="wdata" src_type="ap_uint&lt;32&gt;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48"/>
+        </hw>
+      </arg>
+      <arg id="4" access_type="r" src_name="wvalid" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="56"/>
+        </hw>
+      </arg>
+      <arg id="5" access_type="rw" src_name="wready" src_type="bool&amp;" src_isptr="1" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="64"/>
+        </hw>
+      </arg>
+      <arg id="6" access_type="rw" src_name="bvalid" src_type="bool&amp;" src_isptr="1" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="80"/>
+        </hw>
+      </arg>
+      <arg id="7" access_type="r" src_name="bready" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="96"/>
+        </hw>
+      </arg>
+      <arg id="8" access_type="r" src_name="araddr" src_type="ap_uint&lt;8&gt;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="8" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="104"/>
+        </hw>
+      </arg>
+      <arg id="9" access_type="r" src_name="arvalid" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="112"/>
+        </hw>
+      </arg>
+      <arg id="10" access_type="rw" src_name="arready" src_type="bool&amp;" src_isptr="1" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="120"/>
+        </hw>
+      </arg>
+      <arg id="11" access_type="w" src_name="rdata" src_type="ap_uint&lt;32&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="136"/>
+        </hw>
+      </arg>
+      <arg id="12" access_type="rw" src_name="rvalid" src_type="bool&amp;" src_isptr="1" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="152"/>
+        </hw>
+      </arg>
+      <arg id="13" access_type="r" src_name="rready" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="168"/>
+        </hw>
+      </arg>
+      <arg id="14" access_type="r" src_name="clk" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="176"/>
+        </hw>
+      </arg>
+      <arg id="15" access_type="r" src_name="rst_n" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="184"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0" hw_kernel_support="true"/>
+    </return>
+  </kernel>
+</root>

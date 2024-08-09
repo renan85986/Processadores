@@ -1,0 +1,94 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/renan/Desktop/teste/nmp_axi4l_ip\nmp_axi4l_ip.hlsrun_csim_summary, at 07/31/24 10:44:49
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/renan/Desktop/teste/nmp_axi4l_ip -config C:/Users/renan/Desktop/teste/hls_config.cfg -cmdlineconfig C:/Users/renan/Desktop/teste/nmp_axi4l_ip/hls/config.cmdline
+INFO: [HLS 200-10] For user 'renan' on host 'desktop-k5rpcpk' (Windows NT_amd64 version 10.0) on Wed Jul 31 10:44:51 -0300 2024
+INFO: [HLS 200-10] In directory 'C:/Users/renan/Desktop/teste'
+INFO: [HLS 200-2005] Using work_dir C:/Users/renan/Desktop/teste/nmp_axi4l_ip 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/renan/Documents/Processadores/Processadores/hls_interface/bram.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Documents/Processadores/Processadores/hls_interface/bram.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/renan/Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/renan/Documents/Processadores/Processadores/hls_interface/skidbuffer.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Documents/Processadores/Processadores/hls_interface/skidbuffer.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/renan/Documents/Processadores/Processadores/hls_interface/testbench.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Documents/Processadores/Processadores/hls_interface/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=axi4_lite.h' from C:/Users/renan/Desktop/teste/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Desktop/teste/axi4_lite.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/renan/Documents/Processadores/Processadores/hls_interface/bram_tb.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/renan/Documents/Processadores/Processadores/hls_interface/bram_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/renan/Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/renan/Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/renan/Documents/Processadores/Processadores/hls_interface/skidbuffer_tb.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/renan/Documents/Processadores/Processadores/hls_interface/skidbuffer_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=nmp_axi4l_ip' from C:/Users/renan/Desktop/teste/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/renan/Desktop/teste/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z007sclg225-2' from C:/Users/renan/Desktop/teste/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg225-2'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/renan/Desktop/teste/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/renan/Desktop/teste/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../../Documents/Processadores/Processadores/hls_interface/skidbuffer_tb.cpp in debug mode
+   Compiling ../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp in debug mode
+csim.mk:94: recipe for target 'obj/nmp_axi4l_ip_tb.o' failed
+In file included from ../../../../../../Documents/Processadores/Processadores/hls_interface/skidbuffer_tb.cpp:1:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp:1:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp:30:26: error: variable 'awvalid' is uninitialized when used here [-Werror,-Wuninitialized]
+    nmp_axi4l_ip(awaddr, awvalid, awready, wdata, wvalid, wready, bvalid, araddr, arvalid, arready, rdata, rvalid, clk, rst_n);
+                         ^~~~~~~
+../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp:25:17: note: initialize the variable 'awvalid' to silence this warning
+    bool awvalid, awready, wvalid, wready, bvalid, arvalid, arready, rvalid;
+                ^
+                 = false
+../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp:30:51: error: variable 'wvalid' is uninitialized when used here [-Werror,-Wuninitialized]
+    nmp_axi4l_ip(awaddr, awvalid, awready, wdata, wvalid, wready, bvalid, araddr, arvalid, arready, rdata, rvalid, clk, rst_n);
+                                                  ^~~~~~
+../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp:25:34: note: initialize the variable 'wvalid' to silence this warning
+    bool awvalid, awready, wvalid, wready, bvalid, arvalid, arready, rvalid;
+                                 ^
+                                  = false
+../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp:30:83: error: variable 'arvalid' is uninitialized when used here [-Werror,-Wuninitialized]
+    nmp_axi4l_ip(awaddr, awvalid, awready, wdata, wvalid, wready, bvalid, araddr, arvalid, arready, rdata, rvalid, clk, rst_n);
+                                                                                  ^~~~~~~
+../../../../../../Documents/Processadores/Processadores/hls_interface/nmp_axi4l_ip_tb.cpp:25:59: note: initialize the variable 'arvalid' to silence this warning
+    bool awvalid, awready, wvalid, wready, bvalid, arvalid, arready, rvalid;
+                                                          ^
+                                                           = false
+1 warning and 3 errors generated.
+make: *** [obj/nmp_axi4l_ip_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.434 seconds; peak allocated memory: 179.184 MB.

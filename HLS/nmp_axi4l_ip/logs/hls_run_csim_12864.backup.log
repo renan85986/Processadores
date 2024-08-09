@@ -1,0 +1,49 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/renan/Desktop/teste/nmp_axi4l_ip\nmp_axi4l_ip.hlsrun_csim_summary, at 08/06/24 11:52:26
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/renan/Desktop/teste/nmp_axi4l_ip -config C:/Users/renan/Desktop/teste/hls_config.cfg -cmdlineconfig C:/Users/renan/Desktop/teste/nmp_axi4l_ip/hls/config.cmdline
+INFO: [HLS 200-10] For user 'renan' on host 'desktop-k5rpcpk' (Windows NT_amd64 version 10.0) on Tue Aug 06 11:52:29 -0300 2024
+INFO: [HLS 200-10] In directory 'C:/Users/renan/Desktop/teste'
+INFO: [HLS 200-2005] Using work_dir C:/Users/renan/Desktop/teste/nmp_axi4l_ip 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'skidbuffer.hh' see [hls] from C:/Users/renan/Desktop/teste/hls_config.cfg(13)
+WARNING: [HLS 200-2001] file not found 'C:\Users\renan\Desktop\teste\skidbuffer.cpp' see [hls] from C:/Users/renan/Desktop/teste/hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\Users\renan\Desktop\teste\assert.h' from C:/Users/renan/Desktop/teste/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Desktop/teste/assert.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\Users\renan\Desktop\teste\axi4_lite.h' from C:/Users/renan/Desktop/teste/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Desktop/teste/axi4_lite.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\Users\renan\Desktop\teste\bram.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Desktop/teste/bram.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\Users\renan\Desktop\teste\nmp_axi4l_ip.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Desktop/teste/nmp_axi4l_ip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\Users\renan\Desktop\teste\skidbuffer.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(18)
+WARNING: [HLS 200-40] Cannot find design file 'C:/Users/renan/Desktop/teste/skidbuffer.cpp'
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\Users\renan\Desktop\teste\skidbuffer.h' from C:/Users/renan/Desktop/teste/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Desktop/teste/skidbuffer.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=nmp_axi4l_ip.h' from C:/Users/renan/Desktop/teste/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/Users/renan/Desktop/teste/nmp_axi4l_ip.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\renan\Desktop\teste\nmp_axi4l_ip_tb.cpp' from C:/Users/renan/Desktop/teste/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/renan/Desktop/teste/nmp_axi4l_ip_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=skidbuffer.hh' from C:/Users/renan/Desktop/teste/hls_config.cfg(13)
+WARNING: [HLS 200-40] Cannot find test bench file 'skidbuffer.hh'
+INFO: [HLS 200-1465] Applying ini 'syn.top=nmp_axi4l_ip' from C:/Users/renan/Desktop/teste/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/renan/Desktop/teste/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z007sclg225-2' from C:/Users/renan/Desktop/teste/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg225-2'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/renan/Desktop/teste/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from C:/Users/renan/Desktop/teste/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/renan/Desktop/teste/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/renan/Desktop/teste/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'sim.O=0' from C:/Users/renan/Desktop/teste/hls_config.cfg(9)
+WARNING: [HLS 200-1998] cannot find relative file path '../../skidbuffer.hh' in directory(s): C:/Users/renan/Desktop/teste/nmp_axi4l_ip/solution C:/Users/renan/Desktop/teste
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Cleaning
+[ Cleaned build and execution files ]
+INFO: [SIM 211-200] Compiling source code bram.cpp as hardware code with instrumentation
+INFO: [SIM 211-200] Compiling source code nmp_axi4l_ip.cpp as hardware code with instrumentation
+slxcmd:0:0: error: No such file 'C:\\Users\\renan\\Desktop\\teste\\skidbuffer.cpp'. Required to run 'INFO: [SIM 211-200] Compiling source code skidbuffer.cpp as hardware code with instrumentation'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 0 seconds. Total elapsed time: 5.226 seconds; peak allocated memory: 174.980 MB.

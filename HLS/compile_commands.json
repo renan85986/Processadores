@@ -1,0 +1,38 @@
+[
+  {
+    "directory": "C:\\Users\\renan\\Desktop\\teste",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:\\Users\\renan\\Desktop\\teste\\nmp_axi4l_ip.cpp"
+    ],
+    "file": "C:\\Users\\renan\\Desktop\\teste\\nmp_axi4l_ip.cpp"
+  },
+  {
+    "directory": "C:\\Users\\renan\\Desktop\\teste",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:\\Users\\renan\\Desktop\\teste\\bram.cpp"
+    ],
+    "file": "C:\\Users\\renan\\Desktop\\teste\\bram.cpp"
+  },
+  {
+    "directory": "C:\\Users\\renan\\Desktop\\teste",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:\\Users\\renan\\Desktop\\teste\\nmp_axi4l_ip_tb.cpp"
+    ],
+    "file": "C:\\Users\\renan\\Desktop\\teste\\nmp_axi4l_ip_tb.cpp"
+  }
+]

@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.ip_user_files/bd/nmp/ip/nmp_processing_system7_0_0/sim/nmp_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.ip_user_files/bd/nmp/ip/nmp_xbar_0/sim/nmp_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.ip_user_files/bd/nmp/ip/nmp_auto_pc_1/sim/nmp_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.ip_user_files/bd/nmp/ip/nmp_auto_pc_0/sim/nmp_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.gen/sources_1/bd/nmp/ipshared/f666/hdl/verilog/nmp_axi4l_ip_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_axi4l_ip_control_s_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.gen/sources_1/bd/nmp/ipshared/f666/hdl/verilog/nmp_axi4l_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_axi4l_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.ip_user_files/bd/nmp/ip/nmp_nmp_axi4l_ip_0_1/sim/nmp_nmp_axi4l_ip_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_nmp_axi4l_ip_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.ip_user_files/bd/nmp/sim/nmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_PKASII
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_ZZLC2N
+INFO: [VRFC 10-311] analyzing module nmp
+INFO: [VRFC 10-311] analyzing module nmp_axi_interconnect_0_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1W1980W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/teste_vivado2.gen/sources_1/bd/nmp/hdl/nmp_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nmp_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renan/Desktop/teste_vivado2/nmp_axi4l_ip_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_nmp_wrapper
+ERROR: [VRFC 10-2989] 'MEM_SIZE' is not declared [C:/Users/renan/Desktop/teste_vivado2/nmp_axi4l_ip_tb.v:110]
+ERROR: [VRFC 10-8530] module 'tb_nmp_wrapper' is ignored due to previous errors [C:/Users/renan/Desktop/teste_vivado2/nmp_axi4l_ip_tb.v:3]

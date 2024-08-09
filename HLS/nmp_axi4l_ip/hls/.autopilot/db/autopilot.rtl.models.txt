@@ -1,0 +1,2 @@
+nmp_axi4l_ip_control_s_axi
+nmp_axi4l_ip

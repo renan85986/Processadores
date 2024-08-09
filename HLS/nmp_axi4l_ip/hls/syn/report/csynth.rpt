@@ -1,0 +1,199 @@
+
+
+================================================================
+== Synthesis Summary Report of 'nmp_axi4l_ip'
+================================================================
++ General Information: 
+    * Date:           Tue Aug  6 15:23:59 2024
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        nmp_axi4l_ip
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |     Modules    | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |     & Loops    | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ nmp_axi4l_ip  |     -|  1.73|        0|   0.000|         -|        1|     -|        no|     -|   -|  262 (~0%)|  375 (~0%)|    -|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 8             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------------+--------+-------+--------+-----------------------------+--------------------+
+| Interface     | Register       | Offset | Width | Access | Description                 | Bit Fields         |
++---------------+----------------+--------+-------+--------+-----------------------------+--------------------+
+| s_axi_control | awaddr         | 0x10   | 32    | W      | Data signal of awaddr       |                    |
+| s_axi_control | awvalid        | 0x18   | 32    | W      | Data signal of awvalid      |                    |
+| s_axi_control | awready_i      | 0x20   | 32    | W      | Data signal of awready_i    |                    |
+| s_axi_control | awready_o      | 0x28   | 32    | R      | Data signal of awready_o    |                    |
+| s_axi_control | awready_o_ctrl | 0x2c   | 32    | R      | Control signal of awready_o | 0=awready_o_ap_vld |
+| s_axi_control | wdata          | 0x30   | 32    | W      | Data signal of wdata        |                    |
+| s_axi_control | wvalid         | 0x38   | 32    | W      | Data signal of wvalid       |                    |
+| s_axi_control | wready_i       | 0x40   | 32    | W      | Data signal of wready_i     |                    |
+| s_axi_control | wready_o       | 0x48   | 32    | R      | Data signal of wready_o     |                    |
+| s_axi_control | wready_o_ctrl  | 0x4c   | 32    | R      | Control signal of wready_o  | 0=wready_o_ap_vld  |
+| s_axi_control | bvalid_i       | 0x50   | 32    | W      | Data signal of bvalid_i     |                    |
+| s_axi_control | bvalid_o       | 0x58   | 32    | R      | Data signal of bvalid_o     |                    |
+| s_axi_control | bvalid_o_ctrl  | 0x5c   | 32    | R      | Control signal of bvalid_o  | 0=bvalid_o_ap_vld  |
+| s_axi_control | bready         | 0x60   | 32    | W      | Data signal of bready       |                    |
+| s_axi_control | araddr         | 0x68   | 32    | W      | Data signal of araddr       |                    |
+| s_axi_control | arvalid        | 0x70   | 32    | W      | Data signal of arvalid      |                    |
+| s_axi_control | arready_i      | 0x78   | 32    | W      | Data signal of arready_i    |                    |
+| s_axi_control | arready_o      | 0x80   | 32    | R      | Data signal of arready_o    |                    |
+| s_axi_control | arready_o_ctrl | 0x84   | 32    | R      | Control signal of arready_o | 0=arready_o_ap_vld |
+| s_axi_control | rdata          | 0x88   | 32    | R      | Data signal of rdata        |                    |
+| s_axi_control | rdata_ctrl     | 0x8c   | 32    | R      | Control signal of rdata     | 0=rdata_ap_vld     |
+| s_axi_control | rvalid_i       | 0x98   | 32    | W      | Data signal of rvalid_i     |                    |
+| s_axi_control | rvalid_o       | 0xa0   | 32    | R      | Data signal of rvalid_o     |                    |
+| s_axi_control | rvalid_o_ctrl  | 0xa4   | 32    | R      | Control signal of rvalid_o  | 0=rvalid_o_ap_vld  |
+| s_axi_control | rready         | 0xa8   | 32    | W      | Data signal of rready       |                    |
+| s_axi_control | clk            | 0xb0   | 32    | W      | Data signal of clk          |                    |
+| s_axi_control | rst_n          | 0xb8   | 32    | W      | Data signal of rst_n        |                    |
++---------------+----------------+--------+-------+--------+-----------------------------+--------------------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| awaddr   | in        | ap_uint<8>   |
+| awvalid  | in        | bool         |
+| awready  | inout     | bool&        |
+| wdata    | in        | ap_uint<32>  |
+| wvalid   | in        | bool         |
+| wready   | inout     | bool&        |
+| bvalid   | inout     | bool&        |
+| bready   | in        | bool         |
+| araddr   | in        | ap_uint<8>   |
+| arvalid  | in        | bool         |
+| arready  | inout     | bool&        |
+| rdata    | out       | ap_uint<32>& |
+| rvalid   | inout     | bool&        |
+| rready   | in        | bool         |
+| clk      | in        | bool         |
+| rst_n    | in        | bool         |
++----------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------+---------------+----------+------------------------------------------+
+| Argument | HW Interface  | HW Type  | HW Info                                  |
++----------+---------------+----------+------------------------------------------+
+| awaddr   | s_axi_control | register | name=awaddr offset=0x10 range=32         |
+| awvalid  | s_axi_control | register | name=awvalid offset=0x18 range=32        |
+| awready  | s_axi_control | register | name=awready_i offset=0x20 range=32      |
+| awready  | s_axi_control | register | name=awready_o offset=0x28 range=32      |
+| awready  | s_axi_control | register | name=awready_o_ctrl offset=0x2c range=32 |
+| wdata    | s_axi_control | register | name=wdata offset=0x30 range=32          |
+| wvalid   | s_axi_control | register | name=wvalid offset=0x38 range=32         |
+| wready   | s_axi_control | register | name=wready_i offset=0x40 range=32       |
+| wready   | s_axi_control | register | name=wready_o offset=0x48 range=32       |
+| wready   | s_axi_control | register | name=wready_o_ctrl offset=0x4c range=32  |
+| bvalid   | s_axi_control | register | name=bvalid_i offset=0x50 range=32       |
+| bvalid   | s_axi_control | register | name=bvalid_o offset=0x58 range=32       |
+| bvalid   | s_axi_control | register | name=bvalid_o_ctrl offset=0x5c range=32  |
+| bready   | s_axi_control | register | name=bready offset=0x60 range=32         |
+| araddr   | s_axi_control | register | name=araddr offset=0x68 range=32         |
+| arvalid  | s_axi_control | register | name=arvalid offset=0x70 range=32        |
+| arready  | s_axi_control | register | name=arready_i offset=0x78 range=32      |
+| arready  | s_axi_control | register | name=arready_o offset=0x80 range=32      |
+| arready  | s_axi_control | register | name=arready_o_ctrl offset=0x84 range=32 |
+| rdata    | s_axi_control | register | name=rdata offset=0x88 range=32          |
+| rdata    | s_axi_control | register | name=rdata_ctrl offset=0x8c range=32     |
+| rvalid   | s_axi_control | register | name=rvalid_i offset=0x98 range=32       |
+| rvalid   | s_axi_control | register | name=rvalid_o offset=0xa0 range=32       |
+| rvalid   | s_axi_control | register | name=rvalid_o_ctrl offset=0xa4 range=32  |
+| rready   | s_axi_control | register | name=rready offset=0xa8 range=32         |
+| clk      | s_axi_control | register | name=clk offset=0xb0 range=32            |
+| rst_n    | s_axi_control | register | name=rst_n offset=0xb8 range=32          |
++----------+---------------+----------+------------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------+-----+--------+-------------------+-----+--------+---------+
+| Name                          | DSP | Pragma | Variable          | Op  | Impl   | Latency |
++-------------------------------+-----+--------+-------------------+-----+--------+---------+
+| + nmp_axi4l_ip                | 0   |        |                   |     |        |         |
+|   awready_load_not6_fu_244_p2 |     |        | awready_load_not6 | xor | auto   | 0       |
+|   not_sel_tmp1_fu_250_p2      |     |        | not_sel_tmp1      | and | auto   | 0       |
+|   wready_load_not7_fu_257_p2  |     |        | wready_load_not7  | xor | auto   | 0       |
+|   not_sel_tmp4_fu_263_p2      |     |        | not_sel_tmp4      | and | auto   | 0       |
+|   xor_ln84_fu_270_p2          |     |        | xor_ln84          | xor | auto   | 0       |
+|   or_ln84_1_fu_276_p2         |     |        | or_ln84_1         | or  | auto   | 0       |
+|   or_ln84_fu_282_p2           |     |        | or_ln84           | or  | auto   | 0       |
+|   and_ln86_fu_288_p2          |     |        | and_ln86          | and | auto   | 0       |
+|   and_ln103_fu_294_p2         |     |        | and_ln103         | and | auto   | 0       |
+|   xor_ln103_fu_300_p2         |     |        | xor_ln103         | xor | auto   | 0       |
+|   or_ln103_fu_306_p2          |     |        | or_ln103          | or  | auto   | 0       |
+|   and_ln105_fu_312_p2         |     |        | and_ln105         | and | auto   | 0       |
+|   add_ln112_fu_322_p2         |     |        | add_ln112         | add | fabric | 0       |
++-------------------------------+-----+--------+-------------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name              | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                   |           |           |      |      |        |          |      |         | Banks            |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + nmp_axi4l_ip    |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------+----------------------------------------------+
+| Type      | Options                               | Location                                     |
++-----------+---------------------------------------+----------------------------------------------+
+| interface | s_axilite port=awaddr bundle=control  | nmp_axi4l_ip.cpp:29 in nmp_axi4l_ip, awaddr  |
+| interface | s_axilite port=awvalid bundle=control | nmp_axi4l_ip.cpp:30 in nmp_axi4l_ip, awvalid |
+| interface | s_axilite port=awready bundle=control | nmp_axi4l_ip.cpp:31 in nmp_axi4l_ip, awready |
+| interface | s_axilite port=wdata bundle=control   | nmp_axi4l_ip.cpp:32 in nmp_axi4l_ip, wdata   |
+| interface | s_axilite port=wvalid bundle=control  | nmp_axi4l_ip.cpp:33 in nmp_axi4l_ip, wvalid  |
+| interface | s_axilite port=wready bundle=control  | nmp_axi4l_ip.cpp:34 in nmp_axi4l_ip, wready  |
+| interface | s_axilite port=bvalid bundle=control  | nmp_axi4l_ip.cpp:35 in nmp_axi4l_ip, bvalid  |
+| interface | s_axilite port=bready bundle=control  | nmp_axi4l_ip.cpp:36 in nmp_axi4l_ip, bready  |
+| interface | s_axilite port=araddr bundle=control  | nmp_axi4l_ip.cpp:37 in nmp_axi4l_ip, araddr  |
+| interface | s_axilite port=arvalid bundle=control | nmp_axi4l_ip.cpp:38 in nmp_axi4l_ip, arvalid |
+| interface | s_axilite port=arready bundle=control | nmp_axi4l_ip.cpp:39 in nmp_axi4l_ip, arready |
+| interface | s_axilite port=rdata bundle=control   | nmp_axi4l_ip.cpp:40 in nmp_axi4l_ip, rdata   |
+| interface | s_axilite port=rvalid bundle=control  | nmp_axi4l_ip.cpp:41 in nmp_axi4l_ip, rvalid  |
+| interface | s_axilite port=rready bundle=control  | nmp_axi4l_ip.cpp:42 in nmp_axi4l_ip, rready  |
+| interface | s_axilite port=clk bundle=control     | nmp_axi4l_ip.cpp:43 in nmp_axi4l_ip, clk     |
+| interface | s_axilite port=rst_n bundle=control   | nmp_axi4l_ip.cpp:44 in nmp_axi4l_ip, rst_n   |
+| interface | ap_ctrl_none port=return              | nmp_axi4l_ip.cpp:45 in nmp_axi4l_ip, return  |
++-----------+---------------------------------------+----------------------------------------------+
+
+

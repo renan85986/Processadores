@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"nmp_axi4l_ip": {
+			"proto_instances": {
+			}
+		}
+	}
+}

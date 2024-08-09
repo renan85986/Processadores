@@ -1,0 +1,783 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>nmp_axi4l_ip</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>5.566</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>nmp_axi4l_ip.cpp:11</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <FF>262</FF>
+            <LUT>375</LUT>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>bool</CType>
+            <HasCtrl>0</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>nmp_axi4l_ip</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>nmp_axi4l_ip</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>nmp_axi4l_ip</ModuleName>
+            <BindInstances>awready_load_not6_fu_244_p2 not_sel_tmp1_fu_250_p2 wready_load_not7_fu_257_p2 not_sel_tmp4_fu_263_p2 xor_ln84_fu_270_p2 or_ln84_1_fu_276_p2 or_ln84_fu_282_p2 and_ln86_fu_288_p2 and_ln103_fu_294_p2 xor_ln103_fu_300_p2 or_ln103_fu_306_p2 and_ln105_fu_312_p2 add_ln112_fu_322_p2 control_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>nmp_axi4l_ip</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.566</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>nmp_axi4l_ip.cpp:11</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>262</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>375</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="awready_load_not6_fu_244_p2" SOURCE="nmp_axi4l_ip.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="awready_load_not6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="not_sel_tmp1_fu_250_p2" SOURCE="nmp_axi4l_ip.cpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="not_sel_tmp1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="wready_load_not7_fu_257_p2" SOURCE="nmp_axi4l_ip.cpp:72" STORAGESUBTYPE="" URAM="0" VARIABLE="wready_load_not7" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="not_sel_tmp4_fu_263_p2" SOURCE="nmp_axi4l_ip.cpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="not_sel_tmp4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln84_fu_270_p2" SOURCE="nmp_axi4l_ip.cpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln84" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln84_1_fu_276_p2" SOURCE="nmp_axi4l_ip.cpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln84_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln84_fu_282_p2" SOURCE="nmp_axi4l_ip.cpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln84" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln86_fu_288_p2" SOURCE="nmp_axi4l_ip.cpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln86" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln103_fu_294_p2" SOURCE="nmp_axi4l_ip.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln103_fu_300_p2" SOURCE="nmp_axi4l_ip.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln103_fu_306_p2" SOURCE="nmp_axi4l_ip.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln105_fu_312_p2" SOURCE="nmp_axi4l_ip.cpp:105" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln105" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln112_fu_322_p2" SOURCE="nmp_axi4l_ip.cpp:112" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln112" VISIBLE="true"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_csim clean="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="awaddr" index="0" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="awaddr" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="awvalid" index="1" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="awvalid" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="awready" index="2" direction="inout" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="awready_i" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="awready_o" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="awready_o_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="wdata" index="3" direction="in" srcType="ap_uint&lt;32&gt;" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="wdata" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="wvalid" index="4" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="wvalid" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="wready" index="5" direction="inout" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="wready_i" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="wready_o" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="wready_o_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="bvalid" index="6" direction="inout" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="bvalid_i" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="bvalid_o" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="bvalid_o_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="bready" index="7" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="bready" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="araddr" index="8" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="araddr" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="arvalid" index="9" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="arvalid" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="arready" index="10" direction="inout" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="arready_i" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="arready_o" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="arready_o_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="rdata" index="11" direction="out" srcType="ap_uint&lt;32&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="rdata" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="rdata_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="rvalid" index="12" direction="inout" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="rvalid_i" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="rvalid_o" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="rvalid_o_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="rready" index="13" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="rready" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="clk" index="14" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="clk" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="rst_n" index="15" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="rst_n" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="8" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+            <ports>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x10" name="awaddr" access="W" description="Data signal of awaddr" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="awaddr" access="W" description="Bit 7 to 0 of awaddr"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="awvalid" access="W" description="Data signal of awvalid" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="awvalid" access="W" description="Bit 0 to 0 of awvalid"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="awready_i" access="W" description="Data signal of awready_i" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="awready_i" access="W" description="Bit 0 to 0 of awready_i"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="awready_o" access="R" description="Data signal of awready_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="awready_o" access="R" description="Bit 0 to 0 of awready_o"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x2c" name="awready_o_ctrl" access="R" description="Control signal of awready_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="awready_o_ap_vld" access="R" description="Control signal awready_o_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="wdata" access="W" description="Data signal of wdata" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="wdata" access="W" description="Bit 31 to 0 of wdata"/>
+                    </fields>
+                </register>
+                <register offset="0x38" name="wvalid" access="W" description="Data signal of wvalid" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="wvalid" access="W" description="Bit 0 to 0 of wvalid"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x40" name="wready_i" access="W" description="Data signal of wready_i" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="wready_i" access="W" description="Bit 0 to 0 of wready_i"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x48" name="wready_o" access="R" description="Data signal of wready_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="wready_o" access="R" description="Bit 0 to 0 of wready_o"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x4c" name="wready_o_ctrl" access="R" description="Control signal of wready_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="wready_o_ap_vld" access="R" description="Control signal wready_o_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x50" name="bvalid_i" access="W" description="Data signal of bvalid_i" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="bvalid_i" access="W" description="Bit 0 to 0 of bvalid_i"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x58" name="bvalid_o" access="R" description="Data signal of bvalid_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="bvalid_o" access="R" description="Bit 0 to 0 of bvalid_o"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x5c" name="bvalid_o_ctrl" access="R" description="Control signal of bvalid_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="bvalid_o_ap_vld" access="R" description="Control signal bvalid_o_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x60" name="bready" access="W" description="Data signal of bready" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="bready" access="W" description="Bit 0 to 0 of bready"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x68" name="araddr" access="W" description="Data signal of araddr" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="araddr" access="W" description="Bit 7 to 0 of araddr"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x70" name="arvalid" access="W" description="Data signal of arvalid" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="arvalid" access="W" description="Bit 0 to 0 of arvalid"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x78" name="arready_i" access="W" description="Data signal of arready_i" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="arready_i" access="W" description="Bit 0 to 0 of arready_i"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x80" name="arready_o" access="R" description="Data signal of arready_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="arready_o" access="R" description="Bit 0 to 0 of arready_o"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x84" name="arready_o_ctrl" access="R" description="Control signal of arready_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="arready_o_ap_vld" access="R" description="Control signal arready_o_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x88" name="rdata" access="R" description="Data signal of rdata" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="rdata" access="R" description="Bit 31 to 0 of rdata"/>
+                    </fields>
+                </register>
+                <register offset="0x8c" name="rdata_ctrl" access="R" description="Control signal of rdata" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="rdata_ap_vld" access="R" description="Control signal rdata_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x98" name="rvalid_i" access="W" description="Data signal of rvalid_i" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="rvalid_i" access="W" description="Bit 0 to 0 of rvalid_i"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xa0" name="rvalid_o" access="R" description="Data signal of rvalid_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="rvalid_o" access="R" description="Bit 0 to 0 of rvalid_o"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xa4" name="rvalid_o_ctrl" access="R" description="Control signal of rvalid_o" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="rvalid_o_ap_vld" access="R" description="Control signal rvalid_o_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xa8" name="rready" access="W" description="Data signal of rready" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="rready" access="W" description="Bit 0 to 0 of rready"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xb0" name="clk" access="W" description="Data signal of clk" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="clk" access="W" description="Bit 0 to 0 of clk"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xb8" name="rst_n" access="W" description="Data signal of rst_n" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="rst_n" access="W" description="Bit 0 to 0 of rst_n"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="awaddr"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="awvalid"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="awready"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48" argName="wdata"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="56" argName="wvalid"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="64" argName="wready"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="80" argName="bvalid"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="96" argName="bready"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="104" argName="araddr"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="112" argName="arvalid"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="120" argName="arready"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="136" argName="rdata"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="152" argName="rvalid"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="168" argName="rready"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="176" argName="clk"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="184" argName="rst_n"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_control">32, 8, 16, 0</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">awaddr, 0x10, 32, W, Data signal of awaddr, </column>
+                    <column name="s_axi_control">awvalid, 0x18, 32, W, Data signal of awvalid, </column>
+                    <column name="s_axi_control">awready_i, 0x20, 32, W, Data signal of awready_i, </column>
+                    <column name="s_axi_control">awready_o, 0x28, 32, R, Data signal of awready_o, </column>
+                    <column name="s_axi_control">awready_o_ctrl, 0x2c, 32, R, Control signal of awready_o, 0=awready_o_ap_vld</column>
+                    <column name="s_axi_control">wdata, 0x30, 32, W, Data signal of wdata, </column>
+                    <column name="s_axi_control">wvalid, 0x38, 32, W, Data signal of wvalid, </column>
+                    <column name="s_axi_control">wready_i, 0x40, 32, W, Data signal of wready_i, </column>
+                    <column name="s_axi_control">wready_o, 0x48, 32, R, Data signal of wready_o, </column>
+                    <column name="s_axi_control">wready_o_ctrl, 0x4c, 32, R, Control signal of wready_o, 0=wready_o_ap_vld</column>
+                    <column name="s_axi_control">bvalid_i, 0x50, 32, W, Data signal of bvalid_i, </column>
+                    <column name="s_axi_control">bvalid_o, 0x58, 32, R, Data signal of bvalid_o, </column>
+                    <column name="s_axi_control">bvalid_o_ctrl, 0x5c, 32, R, Control signal of bvalid_o, 0=bvalid_o_ap_vld</column>
+                    <column name="s_axi_control">bready, 0x60, 32, W, Data signal of bready, </column>
+                    <column name="s_axi_control">araddr, 0x68, 32, W, Data signal of araddr, </column>
+                    <column name="s_axi_control">arvalid, 0x70, 32, W, Data signal of arvalid, </column>
+                    <column name="s_axi_control">arready_i, 0x78, 32, W, Data signal of arready_i, </column>
+                    <column name="s_axi_control">arready_o, 0x80, 32, R, Data signal of arready_o, </column>
+                    <column name="s_axi_control">arready_o_ctrl, 0x84, 32, R, Control signal of arready_o, 0=arready_o_ap_vld</column>
+                    <column name="s_axi_control">rdata, 0x88, 32, R, Data signal of rdata, </column>
+                    <column name="s_axi_control">rdata_ctrl, 0x8c, 32, R, Control signal of rdata, 0=rdata_ap_vld</column>
+                    <column name="s_axi_control">rvalid_i, 0x98, 32, W, Data signal of rvalid_i, </column>
+                    <column name="s_axi_control">rvalid_o, 0xa0, 32, R, Data signal of rvalid_o, </column>
+                    <column name="s_axi_control">rvalid_o_ctrl, 0xa4, 32, R, Control signal of rvalid_o, 0=rvalid_o_ap_vld</column>
+                    <column name="s_axi_control">rready, 0xa8, 32, W, Data signal of rready, </column>
+                    <column name="s_axi_control">clk, 0xb0, 32, W, Data signal of clk, </column>
+                    <column name="s_axi_control">rst_n, 0xb8, 32, W, Data signal of rst_n, </column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="awaddr">in, ap_uint&lt;8&gt;</column>
+                    <column name="awvalid">in, bool</column>
+                    <column name="awready">inout, bool&amp;</column>
+                    <column name="wdata">in, ap_uint&lt;32&gt;</column>
+                    <column name="wvalid">in, bool</column>
+                    <column name="wready">inout, bool&amp;</column>
+                    <column name="bvalid">inout, bool&amp;</column>
+                    <column name="bready">in, bool</column>
+                    <column name="araddr">in, ap_uint&lt;8&gt;</column>
+                    <column name="arvalid">in, bool</column>
+                    <column name="arready">inout, bool&amp;</column>
+                    <column name="rdata">out, ap_uint&lt;32&gt;&amp;</column>
+                    <column name="rvalid">inout, bool&amp;</column>
+                    <column name="rready">in, bool</column>
+                    <column name="clk">in, bool</column>
+                    <column name="rst_n">in, bool</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="awaddr">s_axi_control, register, name=awaddr offset=0x10 range=32</column>
+                    <column name="awvalid">s_axi_control, register, name=awvalid offset=0x18 range=32</column>
+                    <column name="awready">s_axi_control, register, name=awready_i offset=0x20 range=32</column>
+                    <column name="awready">s_axi_control, register, name=awready_o offset=0x28 range=32</column>
+                    <column name="awready">s_axi_control, register, name=awready_o_ctrl offset=0x2c range=32</column>
+                    <column name="wdata">s_axi_control, register, name=wdata offset=0x30 range=32</column>
+                    <column name="wvalid">s_axi_control, register, name=wvalid offset=0x38 range=32</column>
+                    <column name="wready">s_axi_control, register, name=wready_i offset=0x40 range=32</column>
+                    <column name="wready">s_axi_control, register, name=wready_o offset=0x48 range=32</column>
+                    <column name="wready">s_axi_control, register, name=wready_o_ctrl offset=0x4c range=32</column>
+                    <column name="bvalid">s_axi_control, register, name=bvalid_i offset=0x50 range=32</column>
+                    <column name="bvalid">s_axi_control, register, name=bvalid_o offset=0x58 range=32</column>
+                    <column name="bvalid">s_axi_control, register, name=bvalid_o_ctrl offset=0x5c range=32</column>
+                    <column name="bready">s_axi_control, register, name=bready offset=0x60 range=32</column>
+                    <column name="araddr">s_axi_control, register, name=araddr offset=0x68 range=32</column>
+                    <column name="arvalid">s_axi_control, register, name=arvalid offset=0x70 range=32</column>
+                    <column name="arready">s_axi_control, register, name=arready_i offset=0x78 range=32</column>
+                    <column name="arready">s_axi_control, register, name=arready_o offset=0x80 range=32</column>
+                    <column name="arready">s_axi_control, register, name=arready_o_ctrl offset=0x84 range=32</column>
+                    <column name="rdata">s_axi_control, register, name=rdata offset=0x88 range=32</column>
+                    <column name="rdata">s_axi_control, register, name=rdata_ctrl offset=0x8c range=32</column>
+                    <column name="rvalid">s_axi_control, register, name=rvalid_i offset=0x98 range=32</column>
+                    <column name="rvalid">s_axi_control, register, name=rvalid_o offset=0xa0 range=32</column>
+                    <column name="rvalid">s_axi_control, register, name=rvalid_o_ctrl offset=0xa4 range=32</column>
+                    <column name="rready">s_axi_control, register, name=rready offset=0xa8 range=32</column>
+                    <column name="clk">s_axi_control, register, name=clk offset=0xb0 range=32</column>
+                    <column name="rst_n">s_axi_control, register, name=rst_n offset=0xb8 range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:29" status="valid" parentFunction="nmp_axi4l_ip" variable="awaddr" isDirective="0" options="s_axilite port=awaddr bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:30" status="valid" parentFunction="nmp_axi4l_ip" variable="awvalid" isDirective="0" options="s_axilite port=awvalid bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:31" status="valid" parentFunction="nmp_axi4l_ip" variable="awready" isDirective="0" options="s_axilite port=awready bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:32" status="valid" parentFunction="nmp_axi4l_ip" variable="wdata" isDirective="0" options="s_axilite port=wdata bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:33" status="valid" parentFunction="nmp_axi4l_ip" variable="wvalid" isDirective="0" options="s_axilite port=wvalid bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:34" status="valid" parentFunction="nmp_axi4l_ip" variable="wready" isDirective="0" options="s_axilite port=wready bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:35" status="valid" parentFunction="nmp_axi4l_ip" variable="bvalid" isDirective="0" options="s_axilite port=bvalid bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:36" status="valid" parentFunction="nmp_axi4l_ip" variable="bready" isDirective="0" options="s_axilite port=bready bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:37" status="valid" parentFunction="nmp_axi4l_ip" variable="araddr" isDirective="0" options="s_axilite port=araddr bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:38" status="valid" parentFunction="nmp_axi4l_ip" variable="arvalid" isDirective="0" options="s_axilite port=arvalid bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:39" status="valid" parentFunction="nmp_axi4l_ip" variable="arready" isDirective="0" options="s_axilite port=arready bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:40" status="valid" parentFunction="nmp_axi4l_ip" variable="rdata" isDirective="0" options="s_axilite port=rdata bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:41" status="valid" parentFunction="nmp_axi4l_ip" variable="rvalid" isDirective="0" options="s_axilite port=rvalid bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:42" status="valid" parentFunction="nmp_axi4l_ip" variable="rready" isDirective="0" options="s_axilite port=rready bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:43" status="valid" parentFunction="nmp_axi4l_ip" variable="clk" isDirective="0" options="s_axilite port=clk bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:44" status="valid" parentFunction="nmp_axi4l_ip" variable="rst_n" isDirective="0" options="s_axilite port=rst_n bundle=control"/>
+        <Pragma type="interface" location="nmp_axi4l_ip.cpp:45" status="valid" parentFunction="nmp_axi4l_ip" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+    </PragmaReport>
+</profile>
+

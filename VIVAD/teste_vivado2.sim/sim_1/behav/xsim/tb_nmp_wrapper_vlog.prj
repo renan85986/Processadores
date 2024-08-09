@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../teste_vivado2.gen/sources_1/bd/nmp/ipshared/ec67/hdl" --include "../../../../teste_vivado2.gen/sources_1/bd/nmp/ipshared/b28c/hdl" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../teste_vivado2.ip_user_files/bd/nmp/ip/nmp_processing_system7_0_0/sim/nmp_processing_system7_0_0.v" \
+"../../../../teste_vivado2.ip_user_files/bd/nmp/ip/nmp_xbar_0/sim/nmp_xbar_0.v" \
+"../../../../teste_vivado2.ip_user_files/bd/nmp/ip/nmp_auto_pc_1/sim/nmp_auto_pc_1.v" \
+"../../../../teste_vivado2.ip_user_files/bd/nmp/ip/nmp_auto_pc_0/sim/nmp_auto_pc_0.v" \
+"../../../../teste_vivado2.gen/sources_1/bd/nmp/ipshared/f666/hdl/verilog/nmp_axi4l_ip_control_s_axi.v" \
+"../../../../teste_vivado2.gen/sources_1/bd/nmp/ipshared/f666/hdl/verilog/nmp_axi4l_ip.v" \
+"../../../../teste_vivado2.ip_user_files/bd/nmp/ip/nmp_nmp_axi4l_ip_0_1/sim/nmp_nmp_axi4l_ip_0_1.v" \
+"../../../../teste_vivado2.ip_user_files/bd/nmp/sim/nmp.v" \
+"../../../../teste_vivado2.gen/sources_1/bd/nmp/hdl/nmp_wrapper.v" \
+"../../../../nmp_axi4l_ip_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

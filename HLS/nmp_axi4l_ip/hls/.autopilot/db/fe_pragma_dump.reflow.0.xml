@@ -1,0 +1,53 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>& ap_int_base<8, false>::operator+=<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator++(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="29" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="awaddr" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="30" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="awvalid" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="31" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="awready" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="32" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="wdata" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="33" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="wvalid" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="34" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="wready" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="35" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="bvalid" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="36" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="bready" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="37" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="araddr" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="38" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="arvalid" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="39" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="arready" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="40" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="rdata" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="41" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="rvalid" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="42" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="rready" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="43" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="clk" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="44" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="s_axilite" port="rst_n" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="nmp_axi4l_ip.cpp" line="45" pragmaType="interface" parentfunction="nmp_axi4l_ip" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<8, false>(ap_bit_ref<8, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::plus operator+<32, false, 32, false>(ap_int_base<32, false> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<8, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<33>(ap_uint<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb0EEC2EDq33_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<8, false>(ap_int_base<8, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<33, false>(ap_int_base<33, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::ap_bit_ref(ap_int_base<8, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<33>::ap_uint<33, false>(ap_int_base<33, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+</pragmas>

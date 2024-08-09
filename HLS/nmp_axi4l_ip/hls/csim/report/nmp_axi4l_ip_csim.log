@@ -1,0 +1,25 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../nmp_axi4l_ip_tb.cpp in debug mode
+   Compiling ../../../../bram.cpp in debug mode
+   Compiling ../../../../nmp_axi4l_ip.cpp in debug mode
+   Generating csim.exe
+axil tests: axil environment validated
+sanity tests: passed
+random tests: random addresses, values and lengths
+passed
+timing tests:
+start add             1 cell pairs
+timing: add           1 cell pairs took           3300 ns
+start add             4 cell pairs
+timing: add           4 cell pairs took           1800 ns
+start add            16 cell pairs
+timing: add          16 cell pairs took           6200 ns
+start add            64 cell pairs
+timing: add          64 cell pairs took          24400 ns
+start add           256 cell pairs
+timing: add         256 cell pairs took          97500 ns
+start add          1024 cell pairs
+timing: add        1024 cell pairs took         312200 ns
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

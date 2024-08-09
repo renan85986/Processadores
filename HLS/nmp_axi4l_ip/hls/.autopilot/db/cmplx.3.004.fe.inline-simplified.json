@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 34,
+    "calls": "",
+    "file": "nmp_axi4l_ip.cpp",
+    "fileloc": 11,
+    "instructions": 119,
+    "loads": {
+      "G": 6,
+      "T": 5
+    },
+    "name": "nmp_axi4l_ip",
+    "stores": {
+      "G": 6,
+      "T": 17
+    },
+    "total_instructions": 119
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "workspaceRoot": "C:\\Users\\renan\\Documents\\Processadores\\HLS\\Interface_AXI",
-  "mapping": {
-    "axi4_ip.cpp": "axi4_ip_hls",
-    "testbench.cpp": "axi4_ip_hls"
-  }
-}

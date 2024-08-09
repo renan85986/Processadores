@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Messages>
-	<Message severity="WARNING" prefix="[HLS 200-1998]" key="HLS 200-1998" tag="" content="cannot find relative file path &apos;../../../axi4_lite.hh&apos; in directory(s): C:/Users/renan/Documents/Processadores/HLS/Interface_AXI/axi4_ip_hls/axi4_ip_hls/solution C:/Users/renan/Documents/Processadores/HLS/Interface_AXI/axi4_ip_hls" resolution=""/>
-</Messages>

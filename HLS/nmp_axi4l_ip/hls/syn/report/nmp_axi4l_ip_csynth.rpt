@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'nmp_axi4l_ip'
+================================================================
+* Date:           Tue Aug  6 15:23:59 2024
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        nmp_axi4l_ip
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.566 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     43|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|     253|    234|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     98|    -|
+|Register         |        -|    -|       9|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     262|    375|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |     Instance    |     Module    | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |control_s_axi_U  |control_s_axi  |        0|   0|  253|  234|    0|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |Total            |               |        0|   0|  253|  234|    0|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |add_ln112_fu_322_p2          |         +|   0|  0|  15|           8|           1|
+    |and_ln103_fu_294_p2          |       and|   0|  0|   2|           1|           1|
+    |and_ln105_fu_312_p2          |       and|   0|  0|   2|           1|           1|
+    |and_ln86_fu_288_p2           |       and|   0|  0|   2|           1|           1|
+    |ap_condition_98              |       and|   0|  0|   2|           1|           1|
+    |not_sel_tmp1_fu_250_p2       |       and|   0|  0|   2|           1|           1|
+    |not_sel_tmp4_fu_263_p2       |       and|   0|  0|   2|           1|           1|
+    |ap_condition_93              |        or|   0|  0|   2|           1|           1|
+    |or_ln103_fu_306_p2           |        or|   0|  0|   2|           1|           1|
+    |or_ln84_1_fu_276_p2          |        or|   0|  0|   2|           1|           1|
+    |or_ln84_fu_282_p2            |        or|   0|  0|   2|           1|           1|
+    |awready_load_not6_fu_244_p2  |       xor|   0|  0|   2|           1|           2|
+    |wready_load_not7_fu_257_p2   |       xor|   0|  0|   2|           1|           2|
+    |xor_ln103_fu_300_p2          |       xor|   0|  0|   2|           2|           1|
+    |xor_ln84_fu_270_p2           |       xor|   0|  0|   2|           1|           2|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |Total                        |          |   0|  0|  43|          23|          18|
+    +-----------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------+----+-----------+-----+-----------+
+    |                 Name                | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_empty_phi_fu_226_p4       |  14|          3|    1|          3|
+    |ap_phi_mux_storemerge_phi_fu_237_p4  |  14|          3|    8|         24|
+    |arready_o                            |  14|          3|    1|          3|
+    |awready_o                            |  14|          3|    1|          3|
+    |bvalid_o                             |  14|          3|    1|          3|
+    |rvalid_o                             |  14|          3|    1|          3|
+    |wready_o                             |  14|          3|    1|          3|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |Total                                |  98|         21|   14|         42|
+    +-------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |compute_idx  |  8|   0|    8|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+--------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|   Protocol   | Source Object|    C Type    |
++-----------------------+-----+-----+--------------+--------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|         s_axi|       control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|         s_axi|       control|        scalar|
+|s_axi_control_AWADDR   |   in|    8|         s_axi|       control|        scalar|
+|s_axi_control_WVALID   |   in|    1|         s_axi|       control|        scalar|
+|s_axi_control_WREADY   |  out|    1|         s_axi|       control|        scalar|
+|s_axi_control_WDATA    |   in|   32|         s_axi|       control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|         s_axi|       control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|         s_axi|       control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|         s_axi|       control|        scalar|
+|s_axi_control_ARADDR   |   in|    8|         s_axi|       control|        scalar|
+|s_axi_control_RVALID   |  out|    1|         s_axi|       control|        scalar|
+|s_axi_control_RREADY   |   in|    1|         s_axi|       control|        scalar|
+|s_axi_control_RDATA    |  out|   32|         s_axi|       control|        scalar|
+|s_axi_control_RRESP    |  out|    2|         s_axi|       control|        scalar|
+|s_axi_control_BVALID   |  out|    1|         s_axi|       control|        scalar|
+|s_axi_control_BREADY   |   in|    1|         s_axi|       control|        scalar|
+|s_axi_control_BRESP    |  out|    2|         s_axi|       control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_none|  nmp_axi4l_ip|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_none|  nmp_axi4l_ip|  return value|
++-----------------------+-----+-----+--------------+--------------+--------------+
+
